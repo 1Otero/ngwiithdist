@@ -1,0 +1,51 @@
+<div id="eventPopUps" class="flex flex-grow justify-center p-4">
+    <div>
+        <div>
+            <div>
+                <p>Create event</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <label>Name event</label>
+                    <input type="text" placeholder="perreo intenso" [(ngModel)]="event.name" matInput/>
+                </div>
+                <div>
+                    <label>Description event</label>
+                    <input type="text" placeholder="description event" [(ngModel)]="event.description" matInput/>
+                </div>
+                <div>
+                    <label>status</label>
+                    <!--<input type="number" min="0" max="1" placeholder="1"/>-->
+                    <!--<select (change)="changeStatus($event)" [(ngModel)]="event.status">-->
+                    <select [(ngModel)]="event.status">
+                        <optgroup *ngFor="let s of listStatus">
+                            <option value="{{s.value}}">{{s.name}}</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div>
+                    <label>notView</label>
+                    <input type="number" min="0" max="1" placeholder="0" [(ngModel)]="event.notView" matInput/>
+                </div>
+                <div>
+                    <label>startDate</label>
+                    <input type="datetime-local" [(ngModel)]="event.startEvent"/>
+                </div>
+                <div>
+                    <label>endDate</label>
+                    <input type="datetime-local" [(ngModel)]="event.endEvent" />
+                </div>
+                <div>
+                    <label>Place</label>
+                    <input type="text" placeholder="Bogotá" [(ngModel)]="event.place" matInput/>
+                </div>
+                <button class="p-2 focus:outline-none text-white bg-blue-800 hover:bg-blue-600 focus:ring-4 focus:ring-purple-300 font-bold rounded-lg text- px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900" 
+                        (click)="saveEvent()">
+                        Create event
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

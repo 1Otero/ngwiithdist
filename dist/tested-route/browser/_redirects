@@ -1,0 +1,3 @@
+/* /index.html 200
+/app id=:id /app/:id 200
+/app/id=:id -> /app/:id

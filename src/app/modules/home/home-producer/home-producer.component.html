@@ -1,0 +1,18 @@
+<body class="flex flex-grow justify-center mt-7">
+    <div class="w-3/4">
+        <div>
+            <div *ngIf="producer != undefined">
+                <h2>{{producer.name}}</h2>
+                <p>{{producer.email}}</p>
+                <p>{{producer.password}}<p>
+            </div>
+        </div>     
+        <div *ngIf="listStore != undefined && listStore.length > 0" class="bg-gray-600 p-11">
+            <h2>Me store's</h2>
+            <div *ngFor="let store of listStore">
+               <!--Recordar que aqui debe venir un componente de store para mostrar una card por tienda-->
+               <app-card-store [meStore]="store"></app-card-store>
+            </div>
+        </div>
+    </div>
+</body>

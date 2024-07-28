@@ -1,0 +1,1 @@
+import{Y as a,j as o}from"./chunk-AUUIYZ7A.js";var n=(()=>{let t=class t{constructor(){this.alertSubject=new o,this.alert$=this.alertSubject.asObservable()}showAlert(r){this.alertSubject.next(r)}};t.\u0275fac=function(s){return new(s||t)},t.\u0275prov=a({token:t,factory:t.\u0275fac,providedIn:"root"});let e=t;return e})();export{n as a};

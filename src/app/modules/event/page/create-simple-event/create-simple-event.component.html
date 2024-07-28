@@ -1,0 +1,19 @@
+<div class="flex flex-grow justify-around">
+ <div class="h-screen w-1/2 p-2">
+    <div class="h-auto">
+        <p class="bg-gray-600 text-2xl md:text-4xl font-black text-white text-center p-2 md:p-8">create event</p>
+        <p class="font-mono">Este evento se eliminara despues de 24 horas, Reclame su evento antes!</p>
+    </div>
+    <div>
+       <div>
+           <label>Name event </label>
+           <input type="text" [(ngModel)]="meEvent.name" placeholder="Perreo intenso" matInput/> 
+       </div>
+       <div>
+           <button 
+           class="p-2 focus:outline-none text-white bg-blue-800 hover:bg-blue-600 focus:ring-4 focus:ring-purple-300 font-bold rounded-lg text- px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+           (click)="createSimpleEvent()">Create event</button>
+       </div>
+    </div>
+ </div>
+</div>

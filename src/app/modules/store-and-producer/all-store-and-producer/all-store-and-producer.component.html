@@ -1,0 +1,21 @@
+<div>
+    <h2>Producer</h2>
+    <div>
+        <h2>{{listStoreAndProducer.producer.name}}</h2>
+    </div>
+    <div>
+        <h3>{{listStoreAndProducer.producer.description}}</h3>
+    </div>
+    <div>
+        <p>{{listStoreAndProducer.producer.createdDate}}</p>
+    </div>
+    <div>
+        <h3>{{listStoreAndProducer.producer.status}}</h3>
+    </div>
+</div>
+<div>
+    <h2>Stores</h2>
+    <div *ngFor="let storeAndProducer of listStoreAndProducer.listStore">
+        <app-card-store-and-producer [cardStore]="storeAndProducer"></app-card-store-and-producer>
+    </div>
+</div>

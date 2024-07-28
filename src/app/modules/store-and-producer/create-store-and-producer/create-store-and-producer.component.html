@@ -1,0 +1,25 @@
+<p>create-store-and-producer works!</p>
+<div>
+    <!--Info producer-->
+    <div>
+      <div>
+        <div><input type="text" value="{{storeAndProducer.nameProducer}}" [(ngModel)]="storeAndProducer.nameProducer"></div>
+        <div><input type="text" value="{{storeAndProducer.descriptionProducer}}" [(ngModel)]="storeAndProducer.descriptionProducer"></div>
+        <div><input type="text" value="{{storeAndProducer.statusProducer}}" [(ngModel)]="storeAndProducer.statusProducer"></div>
+        <div><input type="text" value="{{storeAndProducer.createdDateProducer}}" [(ngModel)]="storeAndProducer.createdDateProducer"></div>
+        <div><input type="text" value="{{storeAndProducer.notViewProducer}}" [(ngModel)]="storeAndProducer.notViewProducer"></div>
+      </div>
+    </div>
+    <!--Info store-->
+    <div>
+        <div>
+        <div><input type="text" value="{{storeAndProducer.nameStore}}" [(ngModel)]="storeAndProducer.nameStore"></div>
+        <div><input type="text" value="{{storeAndProducer.descriptionStore}}" [(ngModel)]="storeAndProducer.descriptionStore"></div>
+        <div><input type="text" value="{{storeAndProducer.statusStore}}" [(ngModel)]="storeAndProducer.statusStore"></div>
+        <div><input type="text" value="{{storeAndProducer.createdDateStore}}" [(ngModel)]="storeAndProducer.createdDateStore"></div>
+        <div><input type="text" value="{{storeAndProducer.notViewStore}}" [(ngModel)]="storeAndProducer.notViewStore"></div>
+        <div><input type="text" value="{{storeAndProducer.codStore}}"></div>
+      </div>
+    </div>
+    <div><button (click)="submitInfo()">Registrar</button></div>
+</div>

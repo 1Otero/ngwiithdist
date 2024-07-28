@@ -1,0 +1,29 @@
+<div>
+    <div class="p-2">
+        <div>
+            <mat-form-field class="w-full">
+                <mat-label>Email:</mat-label>
+                <input [(ngModel)]="producerAuth.email" matInput/>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field class="w-full">
+                <mat-label>Password:</mat-label> 
+                <input [(ngModel)]="producerAuth.password" type="password" matInput/>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="w-full flex flex-grow justify-around">
+        <button class="p-2 focus:outline-none text-white bg-blue-800 hover:bg-blue-600 focus:ring-4 focus:ring-purple-300 font-bold rounded-lg text- px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900" type="submit" (click)="producerLogin()">Producer Login</button>
+    </div>
+</div>
+<div class="bg-gray-600 p-5 m-3 rounded-lg">
+   <div>
+    <h2>Email</h2>
+    <p>{{producerAuth.email}}</p>
+   </div>
+   <div>
+    <h2>Password</h2>
+    <p>{{producerAuth.password}}</p>
+   </div>
+</div>

@@ -1,0 +1,39 @@
+.alert {
+    padding: 25px;
+    margin-bottom: 30px;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    position: absolute;
+    top: 23px; 
+    width: 50%;
+    color: white;
+
+  }
+  
+  .alert-success {
+    background-color: #d4edda;
+    border-color: #c3e0b8;
+  }
+  
+  .alert-warning {
+    background-color: #ff9800;
+    border-color: #c47e05;
+  }
+  
+  .alert-danger {
+    background-color: #f10909;
+    border-color: #ae5a59;
+  }
+  
+  .alert-error {
+    background-color: crimson;
+    border-color: coral;
+  }
+  
+  .close {
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  

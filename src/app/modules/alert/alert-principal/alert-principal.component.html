@@ -1,0 +1,6 @@
+<div *ngIf="show" class="flex flex-wrap justify-center">
+  <div class="alert text-center" [ngClass]="['alert-'+type]">
+    <span class="close" (click)="show= false">Salir</span>
+    <p>{{message}}</p>
+  </div>    
+</div>
